@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- back to the top button -->
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+
+
+    <!-- back to the top button end -->
+    <!-- top navigation -->
+   <header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <!-- <a href="index.html"><img class="logo2" src="./img/kfc.png" alt=""></a> -->
+        </div>
+        <ul class="nav-link">
+             <li>
+             <a href="#home"><i class="fa-solid fa-house fa-lg"></i></a>
+             <a href="#home">HOME</a>
+        </li>
+    
+    
+        <li>
+             <a href="#about"><i class="fa-solid fa-address-card fa-lg"></i></a>
+             <a href="#about">ABOUT</a>
+        </li>
+    
+        <li>
+             <a href="#food-menu-section"><i class="fa-solid fa-project-diagram fa-lg"></i></a>
+             <a href="#food-menu-section">home</a>
+        </li>
+    
+        <li>
+             <a href="#testimonial"><i class="fa-solid fa-map-marker fa-lg"></i></a>
+             <a href="#testimonial">projects</a>
+        </li>
+        
+        <li>
+             <a href="#"><i class="fa-solid fa-user-friends fa-lg"></i></a>
+             <a href="#footer">home</a>
+        </li>
+        </ul>
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="dropdown-menu">
+        <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#food-menu-section">Find us</a></li>
+            <li><a href="#testimonial">All cam</a></li>
+            <li><a href="home">All cam</a></li>
+          
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+   </header>
+     <!-- top navigation end -->
+
+     <!-- section home-->
+       <section id="home" class="fullheight align-items-center bg-img bg-img-fixed"
+        style="background-image: url(./img/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <div class="slogan">
+                        <h1 class="left-to-right play-on-scroll">Fresh Food</h1>
+                        
+                        <p class="left-to-right play-on-scroll delay-2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ea enim. Placeat ipsam, saepe accusantium similique, amet totam fugit doloribus unde sit eaque ab nulla minima voluptates esse cumque quod?
+                        </p>
+                        <div class="left-to-right play-on-scroll delay-4">
+                            <BUtton >
+                            ORDER NOW
+                        </BUtton>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- section home end-->
+
+     <!-- ABOUR SECTION -->
+     <section class="about fullheight align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 h-xs">
+                    <img src="assets/dan-gold-4_jhDO54BYg-unsplash.jpg" alt=""
+                        class="fullwidth left-to-right play-on-scroll">
+                </div>
+                <div class="col-5 col-xs-12 align-items-center">
+                    <div class="about-slogan right-to-left play-on-scroll">
+                        <h3>
+                            <span class="primary-color">We</span> create <span class="primary-color">delicious</span>
+                            memories for <span class="primary-color">you</span>
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus placeat et eos,
+                            dignissimos voluptatem tempora necessitatibus doloribus! Eum qui doloribus odio dolor
+                            tenetur nihil impedit vero magni, distinctio soluta!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- ABOUR SECTION END -->
+
+     <!-- food menu section -->
+     <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section" style="background-image:url(./img/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
+        <div class="container">
+            <div class="food-menu">
+                <h1>
+                    what will <span class="primary-color">you</span> eat today?
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, ea quas. Obcaecati ipsam totam explicabo quia facere vitae voluptatibus nesciunt officia? Quam inventore quae exercitationem fugiat fuga eveniet quis explicabo.
+                </p>
+                <div class="food-category">
+                    <div class="zoom play-on-scroll">
+                        <button class="active" data-food-type="all">
+                        All Food 
+                    </button>
+                    </div>
+                    
+                    <div class="zoom play-on-scroll delay-2">
+                         <button data-food-type="salad">
+                        salad 
+                    </button>
+                    </div>
+                   
+                    <div class="zoom play-on-scroll delay-4">
+                        <button data-food-type="lorem">
+                         Soups
+                    </button>
+                    </div>
+                    
+                    <div class="zoom play-on-scroll delay-6">
+                            <button data-food-type="ipsum">
+                        Chops
+                    </button>
+                    </div>
+                    
+                    <div class="zoom play-on-scroll delay-8">
+                          <button data-food-type="meat">
+                        meat
+                    </button>
+                    </div>
+                  
+                 
+                  
+                </div>
+
+                <div class="food-item-wrap all">
+                    <!-- food menu start -->
+                    <div class="food-item salad-type">
+        
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <!-- rotate start -->
+                            <div class="item-img">
+                                <div class="img-holder">
+                                    <div class="white">
+                                    <img class="rotate_3" src="./img/yam.png" alt="">
+                                          <audio id="beep" preload="auto">
+            <source src="click.m4a">
+        </audio>
+    
+
+    <script>
+        var beepOne= $("#beep")[0];
+        $(".white")
+        .mouseenter(function() {
+            beepOne.play();
+        });
+    </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- rotate ends -->
+                                <div class="item-info">
+                                    <div>
+                                    <h3>
+                                        lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                    </div>
+                                
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- food end start -->
+                    <!-- food menu start -->
+                    <div class="food-item lorem-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <!-- rotate start -->
+                            <div class="item-img">
+                                <div class="img-holder">
+                                    <div class="white">
+                                    <img class="rotate_3" src="./img/rice.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- rotate ends -->
+                                <div class="item-info">
+                                    <div>
+                                    <h3>
+                                        lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                    </div>
+                                
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- food end start -->
+                    <!-- food menu start -->
+                    <div class="food-item ipsum-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <!-- rotate start -->
+                            <div class="item-img">
+                                <div class="img-holder">
+                                    <div class="white">
+                                    <img class="rotate_3" src="./img/chickn.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- rotate ends -->
+                                <div class="item-info">
+                                    <div>
+                                    <h3>
+                                        lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                    </div>
+                                
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- food end start -->
+                    <!-- food menu start -->
+                    <div class="food-item meat-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <!-- rotate start -->
+                            <div class="item-img">
+                                <div class="img-holder">
+                                    <div class="white">
+                                    <img class="rotate_3" src="./img/spag.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- rotate ends -->
+                                <div class="item-info">
+                                    <div>
+                                    <h3>
+                                        lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                    </div>
+                                
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- food end start -->
+                    <!-- food menu start -->
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <!-- rotate start -->
+                            <div class="item-img">
+                                <div class="img-holder">
+                                    <div class="white">
+                                    <img class="rotate_3" src="./img/be.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- rotate ends -->
+                                <div class="item-info">
+                                    <div>
+                                    <h3>
+                                        lorem ipsum
+                                    </h3> 
+                                    <span>
+                                        120$
+                                    </span>
+                                    </div>
+                                
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- food end start -->
+                    <!-- food menu start -->
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <!-- rotate start -->
+                            <div class="item-img">
+                                <div class="img-holder">
+                                    <div class="white">
+                                    <img class="rotate_3" src="./img/be.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- rotate ends -->
+                                <div class="item-info">
+                                    <div>
+                                    <h3>
+                                        lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                    </div>
+                                
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- food end start -->
+                    <!-- food menu start -->
+                    <div class="food-item ipsum-type">
+                       <div class="item-wrap bottom-up play-on-scroll">
+                            <!-- rotate start -->
+                            <div class="item-img">
+                                <div class="img-holder">
+                                    <div class="white">
+                                    <img class="rotate_3" src="./img/be.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- rotate ends -->
+                                <div class="item-info">
+                                    <div>
+                                    <h3>
+                                        lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                    </div>
+                                
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- food end start -->
+
+                    <!-- food menu start -->
+                    <div class="food-item meat-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <!-- rotate start -->
+                            <div class="item-img">
+                                <div class="img-holder">
+                                    <div class="white">
+                                    <img class="rotate_4" src="./img/dish.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- rotate ends -->
+                                <div class="item-info">
+                                    <div>
+                                    <h3>
+                                        lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                    </div>
+                                
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- food end start -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- food menu section end -->
+
+     <!-- testimonials starts -->
+     <section id="testimoniasection
+        <div calss="container">
+            <div class="row">
+                <div class="col-4 col-xs-12">
+                    <div class="review-wrap zoom play-on-scroll delay-2">
+                        <div class="review-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates deleniti illum dolores dolor itaque accusamus inventore quae quo dolorem, quibusdam asperiores eveniet laboriosam suscipit sit tempore placeat nostrum culpa?
+                            </p>
+                            <div class="review-img bg-img" style="background-image: url(./img/close-up-portrait-cute-young-woman-holding-textbook-colored-pencils-posing-studio-isolated-pink_176532-9674.jpg);"></div>
+                        </div>
+                        <div class="review-info">
+                            <h3>
+                                lorem ipsum
+                            </h3>
+                            <div class="rating">
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <div class="zoom play-on-scroll">
+                         <div class="review-wrap active zoom play-on-scroll">
+                        <div class="review-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates deleniti illum dolores dolor itaque accusamus inventore quae quo dolorem, quibusdam asperiores eveniet laboriosam suscipit sit tempore placeat nostrum culpa?
+                            </p>
+                            <div class="review-img bg-img" style="background-image: url(./img/close-up-portrait-cute-young-woman-holding-textbook-colored-pencils-posing-studio-isolated-pink_176532-9674.jpg);"></div>
+                        </div>
+                        <div class="review-info">
+                            <h3>
+                                lorem ipsum
+                            </h3>
+                            <div class="rating">
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                   
+                </div>
+                <div class="col-4 col-xs-12">
+                    <div class="review-wrap zoom play-on-scroll delay-4">
+                        <div class="review-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates deleniti illum dolores dolor itaque accusamus inventore quae quo dolorem, quibusdam asperiores eveniet laboriosam suscipit sit tempore placeat nostrum culpa?
+                            </p>
+                            <div class="review-img bg-img" style="background-image: url(./img/close-up-portrait-cute-young-woman-holding-textbook-colored-pencils-posing-studio-isolated-pink_176532-9674.jpg);"></div>
+                        </div>
+                        <div class="review-info">
+                            <h3>
+                                lorem ipsum
+                            </h3>
+                            <div class="rating">
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </section>
+     <!-- testimonials starts -->
+
+     <!-- footer start -->
+     <section id="footer" class="footer bg-img" style="background-image: url(./img/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>fresh food</h1>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia eaque ea consequatur soluta earum officiis libero velit, sequi nam eligendi fugit tempora repellat nostrum dolores consequuntur nemo minus eos!
+                    </p>
+                    <br>
+                    <p>email:samuelemmanuel11111@gmial.com</p>
+                    <p>phone: 2323232</p>
+                    <p>website: feredcer.com</p>
+
+                </div>
+                <div class="col-2 col-xs-12">
+                    <h1>
+                        about us
+                    </h1>
+                    <br>
+                    <p><a href="#">
+                        chefs
+                    </a></p>
+                    <p><a href="#">
+                        menu
+                    </a></p>
+                    <p><a href="#">
+                        testimonials
+                    </a></p>
+                    
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1>subscribe & media</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic error aliquam recusandae vel modi, corrupti necessitatibus, iste quod ullam non quas facere omnis, explicabo fugiat numquam neque esse quisquam.</p>
+                    <div class="input-group">
+                        <input type="text" placeholder="enter your email">
+                        <button>subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- div -->
+     <div> 
+
+        <div class="container5">
+        <input type="button" value="hite me">
+        <div class="box">
+            <div class="card" id="front">
+                <div class="mm"><p class="p1">lorem</p>
+                    <img class="dd" src="./img/pap.jpeg" alt="">
+                
+                </div>
+            </div>
+
+            <div class="card" id="back">
+                 <div class="mm"><p class="p1">lorem</p>
+                    <img class="dd" src="./img/dan-gold-4_jhDO54BYg-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="card" id="left">
+                 <div class="mm"><p class="p1">lorem</p>
+                    <img class="dd" src="./img/oa.jpeg" alt="">
+                </div>
+            </div>
+            <div class="card" id="right">
+                 <div class="mm"><p class="p1">lorem</p>
+                    <img class="dd" src="./img/brooke-lark-08bOYnH_r_E-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="card" id="top">
+                 <div class="mm"><p class="p1">lorem</p>
+                    <img class="dd" src="./img/brooke-lark-08bOYnH_r_E-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="card" id="bottom">
+                 <div class="mm"><p class="p1">lorem</p>
+                    <img class="dd" src="./img/brooke-lark-08bOYnH_r_E-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     </div>
+     <!-- div end -->
+
+     <script src="./index.js"></script>
+
+</body>
+</html>

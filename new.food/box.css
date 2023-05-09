@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    height: 100vh;
+    /* background-color: rgb(79, 79, 120); */
+}
+.container5{
+    height: 60vh;
+    width: 30vh;
+    position: absolute;
+    top:50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transform: rotate(-90deg); */
+    transform-style: preserve-3d;
+    animation: animate 50s infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+    25%{
+        transform: rotateX(-45deg) rotateY(-45deg);
+    }
+    50%{
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+    75%{
+        transform: rotateX(-45deg) rotateY(45deg);
+    }
+    100%{
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+}
+.card{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    padding: 100px 0px;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    font-size: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    transition: all 2s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+
+}
+.mm{
+     height: 250px;
+    width: 250px;
+    /* background-color: aquamarine; */
+     justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#front{
+    transform: translateZ(125px);
+}
+#back{
+    transform: translateZ(-125px);
+}
+#left{
+    right: 125px;
+    transform: rotateY(-90deg);
+}
+#right{
+    left: 125px;
+    transform: rotateY(90deg);
+}
+#top{
+    bottom: 125px;
+    transform: rotateX(90deg);
+}
+#bottom{
+    top: 125px;
+    transform: rotateX(-90deg);
+}
+input{
+    height: 50px;
+    width: 200px;
+    background: transparent;
+       background-color: rgba(218, 204, 178, 0.6);
+       backdrop-filter: blur(10px);
+    border: .125rem solid green;
+     outline: none;
+    border: none;
+    border-radius: 2rem;
+    font-size: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    transition: all ease-in-out 0.7s;
+   
+
+
+
+} 
+input:hover{
+    background-color: rgb(83, 124, 83);
+}
+input:focus~ .box #front{
+    transform: translateZ(180px)  rotateY(360deg);
+}
+input:focus~ .box #back{
+    transform: translateZ(-180px)  rotateY(360deg);
+}
+input:focus~ .box #left{
+    right: 180px;
+}
+input:focus~ .box #right{
+    left: 180px;
+}
+input:focus~ .box #top{
+    bottom: 180px;
+}
+input:focus~ .box #bottom{
+    top: 180px;
+}
+.dd{
+    width: 100%;
+    height: 100%;
+    
+}
+p{
+    z-index: 1000;
+    position: absolute;
+    left: 100px;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************* start cube animation ******************************************* */
+.container5{
+    height: 60vh;
+    width: 30vh;
+    position: relative;
+    top:50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transform: rotate(-90deg); */
+    transform-style: preserve-3d;
+    animation: animate 50s infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+    25%{
+        transform: rotateX(-45deg) rotateY(-45deg);
+    }
+    50%{
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+    75%{
+        transform: rotateX(-45deg) rotateY(45deg);
+    }
+    100%{
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+}
+.card{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    padding: 100px 0px;
+    color: white;
+    /* background: black; */
+    border: 2px solid white;
+    font-size: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    transition: all 2s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+
+}
+.mm{
+     height: 250px;
+    width: 250px;
+    /* background-color: aquamarine; */
+     justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.dd{
+    width: 100%;
+    height: 100%;
+    filter: brightness(90%);
+    
+}
+.p1{
+    z-index: 1000;
+    position: absolute;
+    left: 100px;
+    color: black;
+    font-size: 20px;
+}
+#front{
+    transform: translateZ(125px);
+}
+#back{
+    transform: translateZ(-125px);
+}
+#left{
+    right: 125px;
+    transform: rotateY(-90deg);
+}
+#right{
+    left: 125px;
+    transform: rotateY(90deg);
+}
+#top{
+    bottom: 125px;
+    transform: rotateX(90deg);
+}
+#bottom{
+    top: 125px;
+    transform: rotateX(-90deg);
+}
+input{
+    height: 50px;
+    width: 200px;
+    background: transparent;
+       background-color: rgba(218, 204, 178, 0.6);
+       backdrop-filter: blur(10px);
+    border: .125rem solid green;
+     outline: none;
+    border: none;
+    border-radius: 2rem;
+    font-size: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    transition: all ease-in-out 0.7s;
+   
+
+
+
+} 
+input:hover{
+    background-color: rgb(83, 124, 83);
+}
+input:focus~ .box #front{
+    transform: translateZ(180px)  rotateY(360deg);
+}
+input:focus~ .box #back{
+    transform: translateZ(-180px)  rotateY(360deg);
+}
+input:focus~ .box #left{
+    right: 180px;
+}
+input:focus~ .box #right{
+    left: 180px;
+}
+input:focus~ .box #top{
+    bottom: 180px;
+}
+input:focus~ .box #bottom{
+    top: 180px;
+}
+
+
+/* ************************************* end cube animation ******************************************* */
